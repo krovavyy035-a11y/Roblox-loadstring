@@ -1,0 +1,16 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ClaimReward = ReplicatedStorage
+    :WaitForChild("Packages")
+    :WaitForChild("_Index")
+    :WaitForChild("sleitnick_knit@1.7.0")
+    :WaitForChild("knit")
+    :WaitForChild("Services")
+    :WaitForChild("ChallengeService")
+    :WaitForChild("RF")
+    :WaitForChild("ClaimReward")
+
+for i = 1, 12983821029 do
+    local args = { i }
+    ClaimReward:InvokeServer(unpack(args))
+    task.wait(0.1) -- opcional, evita spam excessivo
+end
